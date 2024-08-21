@@ -278,6 +278,7 @@ justify-content: space-between;
     background: #ffff;
 }
 .layout3 .container{
+    width: 1050px;
     height: 918px;
     padding: 72px 0px 10px 0px;
 }
@@ -299,3 +300,220 @@ height: 134px;
     color: #737373;
     font-size: 14px;
 }
+.sectioned{
+    width: 1050px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.grid{
+    display: flex;
+    gap: 10px;
+    width: 1050px;
+    height: 622px;
+    justify-content: space-between;
+}
+.product_card{
+    width: 348px;
+    height: 300px;
+    position: relative;
+}
+.product_card img{
+    width: 348px;
+    height: 300px;
+}
+.sale{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    border-radius: 3px;
+    background: #E74040;
+    width: 51px;
+    height: 24px;
+    text-align: center;
+}
+.sale h6{
+    color: #ffff;
+    font-size: 14px;
+    line-height: 24px;
+}
+.icons{
+    position: absolute;
+    top: 236px;
+    left: 104px;
+    display: flex;
+    gap: 10px;
+}
+.icon{
+    width: 40px;
+    height: 40px;
+    background: #ffff;
+    border-radius: 40px;
+    align-content: center;
+    position: relative;
+}
+.icons img{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 10px;
+    left: 10px;
+}
+.about{
+    padding: 25px 25px 35px 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.prices{
+    display: flex;
+    width: 108px;
+    height: 34px;
+    gap: 5px;
+    color: #2DC071;
+}
+.frame1{
+    display: flex;
+    justify-content: space-between;
+}
+.frame1_sec1{
+    display: flex;
+   gap: 5px;
+   padding: 5px;
+    width: 50px;
+    height: 26px;
+    background: #26335D;
+    color: #ffff;
+    border-radius: 20px;
+}
+.frame1_sec1 img{
+    width: 16px;
+    height: 16px;
+    top: 0.75px;
+    left: 0.5px;
+}
+.frame1_sec1 div{
+    font-size: 12px;
+    width: 19px;
+    height: 16px;
+}
+.about h5{
+    font-size: 16px;
+    color: #252B42;
+}
+.about p{
+    font-size: 14px;
+    color: #737373;
+}
+
+.offer{
+    color: #BDBDBD;
+    font-size: 16px;
+}
+.about button{
+    border: 1px solid #1BA0AB;
+    border-radius: 37px;
+    color: #1BA0AB;
+    width:144px;
+height: 44px;
+padding: 10px 20px 10px 20px;
+display: flex;
+align-items: center;
+background: transparent;
+}
+.layout4{
+    height: 1314px;
+}
+.layout4 .sectioned{
+    height: 1249px;
+}
+.layout4 .grid{
+    height: 937px;
+    display: flex;
+    gap: 15px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    height: 937px;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+.card1{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    text-align: center;
+    align-items: center;
+    height: 908px;
+    padding: 50px 40px 50px 40px;
+    
+}
+.card2{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    text-align: center;
+    align-items: center;
+    background: #26335D;
+    height: 908px;
+    padding: 20px 40px 50px 40px;
+}
+.card3{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    text-align: center;
+    align-items: center;
+    height: 908px;
+    padding: 50px 40px 50px 40px;
+}
+.like{
+    height: 96px;
+    width: 96px;
+    border-radius: 96px;
+    background: #F69B25;
+    align-items: center;
+}
+.like img{
+    
+    width: 48px;
+    height: 48px;
+}
+.card h3{
+    color: #252B42;
+    font-size: 24px;
+
+}
+.card2 h3{
+    color: #ffff;
+}
+.card h6{
+font-size: 14px;
+line-height: 24px;
+width: 142px;
+height: 48px;
+
+}
+.price_sec h2{
+    color: #1BA0AB;
+}
+.price_sec h6{
+    color: #8EC2F2;
+}
+/* .features ul li{
+list-style-type: none;
+} */
+/* .features .filled_tick{
+    background: #2DC071 ;
+    width: 32px;
+    height: 32px;
+    border-radius: 32px;
+}
+.features img{
+    width: 16px;
+    height: 11px;
+} */
