@@ -1,0 +1,219 @@
+@media screen and (max-width:320px) {
+
+    
+}
+@media screen and (max-width:1100px){
+    
+    p{
+        font-size: 12px;
+    }
+    .navbar{
+        display: flex;
+        align-items: center;
+        gap: 0;
+        padding: 0;
+    }
+    .menubar{
+        gap: 100px;
+    }
+    .borderless{
+        font-size: 12px;
+    }
+    .filled{
+        gap: 5px;
+        font-size: 12px;
+    }
+    .content .container{
+        max-width: 950px;
+        margin: auto;
+    }
+    .container{
+        max-width: 900px;
+        margin: auto;
+    }
+    .buttons{
+        gap: 10px;
+    }
+    .button{
+        padding: 10px 9px 10px 9px;
+    }
+    .first_section h1{
+        font-size: 40px;
+    }
+    .first_section h5{
+        font-size: 14px;
+    }
+    .layout1 .description{
+        padding: 0px 0px 0px 31px;
+    }
+    .sectioned{
+        max-width: 900px;
+
+    }
+    .grid{
+        max-width: 900px;
+    }
+    .product_card{
+        max-width: 292px;
+        height: 256px;
+        position: relative;
+    }
+    .product_card img{
+        max-width: 292px;
+        height: 256px;
+        
+    }
+    .sale{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        padding: 0px 20px 0px 20px;
+    }
+    .sale h6{
+        font-size: 12px;
+        text-align: center;
+    }
+     .icons{
+        position: absolute;
+        bottom: 10px;
+        left: 25%;
+    }
+    
+.icon{
+            width: 40px;
+            height: 40px;
+            background: #ffff;
+            border-radius: 40px;
+            align-content: center;
+            position: relative;
+ }
+ .icons img{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 10px;
+    left: 10px;
+}
+    
+    .about h5{
+        font-size: 14px;
+    }
+    .about p{
+        font-size: 12px;
+    } 
+
+}
+ @media screen and (max-width:950px) {
+    .container{
+        max-width: 500px;
+        margin: auto;
+    }
+    .button{
+        font-size: 10px;
+    }
+    section{
+        padding: 20px 0px;
+    }
+    .navbar{
+        padding: 0;
+    }
+    .menubar{
+        gap: 50px;
+    }
+    .content .container{
+        max-width: 700px;
+        margin: auto;
+    }
+    .first_section{
+        flex-direction: column;
+    }
+    .intro{
+        text-align: center;
+    }
+    .intro .buttons{
+        display: flex;
+        justify-content: center;
+    }
+    .first_section h1{
+        font-size: 30px;
+    }
+    .first_section h5{
+        font-size: 12px;
+    }
+    .cover{
+       display: none;
+    }
+    .layout1 .description{
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+    .layout2 ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+        padding-left: 20px;
+    }
+    .sectioned{
+        max-width: 500px;
+    }
+    .grid_col{
+        display: flex;
+    }
+    .product_card{
+        width: 200px;
+        height: 220px;
+    }
+    .product_card img{
+        width: 200px;
+        height: 220px;
+    }
+    .icons{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .icon{
+        max-width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .icons img{
+        width: 10px;
+        height: 10px;
+    }
+    .cards{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        justify-content: center;
+    }
+    .cards .card{
+        width: 100%;
+        padding: 20px;
+    }
+    .cards .comments{
+        padding: 15px 0px 0px 0px;
+    }
+    .client{
+        padding-bottom: 15px;
+    }
+    form{
+        /* width: 100%; */
+        justify-content: center;
+    }
+    input{
+        width: 0;
+    }
+    .contact{
+        display: grid;
+        justify-content: center;
+        text-align: center;
+    }
+    .address li{
+        justify-content: center;
+    }
+ }

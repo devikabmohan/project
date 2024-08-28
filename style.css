@@ -528,7 +528,7 @@ align-items: center;
 .client img{
     width: 50px;
     height: 50px;
-    border-radius: 50px;
+    border-radius: 50%;
 }
 .client h6{
     height: 20px;
@@ -574,11 +574,11 @@ align-items: center;
 form{
     display: flex;
     gap: 0; 
-     width: 688px;
+     /* width: 688px; */
      background: #F9F9F9;
 }
 form input{
-    width: 570px;
+    max-width: 570px;
     height: 58px;
     border: 1px solid #E6E6E6;
     border-radius: 5px 0px 0px 5px;
@@ -590,13 +590,14 @@ form input{
     font-weight: 400;
 }
 form button{
-    width: 117px;
+    /* width: 117px; */
     height: 58px;
     background: #1BA0AB;
     border: 1px solid #E6E6E6;
     color: #FFFFFF;
     font-size: 14px;
     border-radius: 0px 5px 5px 0px;
+    padding: 20px;
 }
 /* section 7 */
 .layout7{
