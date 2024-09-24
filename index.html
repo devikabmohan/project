@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="style2.css" />
+    <link rel="stylesheet" href="responsive.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,8 +15,13 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style3.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
       rel="stylesheet"
@@ -25,50 +30,73 @@
   </head>
   <body>
     <!-- Intro head content -->
-    <div class="headContent">
-      <header>
-        <!-- To display brandname and menu items -->
-        <div class="navbar">
-          <div class="brandName">
-            <div>MedicaleEnerg</div>
-          </div>
-          <!-- Nav bar menu -->
-          <nav class="menubar">
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Product</a></li>
-              <li><a href="#">Pricing</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-            <!-- navbar buttons -->
-            <div class="buttons">
-              <button class="button borderless">Login</button>
-              <button class="button filled">
-                JOIN US<span class="material-symbols-outlined">
-                  arrow_forward
-                </span>
-              </button>
-            </div>
-          </nav>
+
+    <header>
+      <!-- To display brandname and menu items -->
+      <div class="navbar">
+        <input type="checkbox" id="check" />
+        <label for="check" class="ham-close"
+          ><i class="fa-solid fa-xmark"></i
+        ></label>
+        <label for="check" class="ham-open"
+          ><i class="fa-solid fa-bars"></i
+        ></label>
+        <div class="brandName">
+          <div>MedicaleEnerg</div>
         </div>
-      </header>
-      <!-- Intro head content -->
-      <div class="content">
-        <div class="container">
-          <div class="first_section">
-            <div class="intro">
-              <h5>Welcome</h5>
-              <h1>A Great Place To Recieve Care</h1>
-              <h4>Get your best looking smile now!</h4>
-              <div class="buttons">
-                <button class="button filled">Get quote now</button>
-                <button class="button hollow">Learn More</button>
-              </div>
+        <!-- Nav bar menu -->
+
+        <nav class="menubar">
+          <ul class="menu_nav">
+            <li><a href="#">Home</a></li>
+
+            <li class="drop">
+              <input id="dropdown_click" type="checkbox" />
+              <a href="#">Product<label for="dropdown_click" class="down"><i class="fa-solid fa-caret-down"></i></label><label for="dropdown_click" class="up"><i class="fa-solid fa-caret-up"></i></label></a>
+              <ul class="dropdown">
+                
+                <li><a href="#">Product 1</a></li>
+                <li><a href="#">Product 2</a></li>
+                <li><a href="#">Product 3</a></li>
+                <li><a href="#">Product 4</a></li>
+                </ul>
+        
+            </li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><button class="ham">Login</button></li>
+          </ul>
+          <!-- navbar buttons -->
+          <div class="buttons">
+            <button class="button borderless">Login</button>
+            <button class="button filled">
+              JOIN US<span class="material-symbols-outlined">
+                arrow_forward
+              </span>
+            </button>
+          </div>
+        </nav>
+        <!-- <nav class="ham-menu">
+
+          </nav> -->
+      </div>
+    </header>
+    <!-- Intro head content -->
+    <div class="content">
+      <div class="container">
+        <div class="first_section">
+          <div class="intro">
+            <h5>Welcome</h5>
+            <h1>A Great Place To Recieve Care</h1>
+            <h4>Get your best looking smile now!</h4>
+            <div class="buttons">
+              <button class="button filled">Get quote now</button>
+              <button class="button hollow">Learn More</button>
             </div>
-            <!-- To display image-->
-            <div class="cover">
-              <img class="image1" src="img/image1.png" alt="image of doctor" />
-            </div>
+          </div>
+          <!-- To display image-->
+          <div class="cover">
+            <img class="image1" src="img/image1.png" alt="image of doctor" />
           </div>
         </div>
       </div>
@@ -89,9 +117,8 @@
             <div id="rectangle"></div>
             <h2>Our Department</h2>
             <p>
-              Problems trying to resolve the conflict between
-              the two major realms of Classical physics:
-              Newtonian mechanics
+              Problems trying to resolve the conflict between the two major
+              realms of Classical physics: Newtonian mechanics
             </p>
 
             <a href="#"
@@ -133,20 +160,24 @@
           <!-- to display product cards -->
           <div class="grid">
             <!-- product card 1 -->
-            <div class="grid_col">
+            <div class="grid_col x">
               <div class="product_card">
                 <div class="sale"><h6>Sale</h6></div>
                 <img src="img/greenchem.jpg" alt="test tubes" />
                 <div class="icons">
-                  <div class="icon"><span class="material-symbols-outlined">
-                    favorite
-                    </span></div>
-                  <div class="icon"><span class="material-symbols-outlined">
-                    shopping_cart
-                    </span></div>
-                  <div class="icon"><span class="material-symbols-outlined eye">
-                    visibility
-                    </span></div>
+                  <div class="icon">
+                    <span class="material-symbols-outlined"> favorite </span>
+                  </div>
+                  <div class="icon">
+                    <span class="material-symbols-outlined">
+                      shopping_cart
+                    </span>
+                  </div>
+                  <div class="icon">
+                    <span class="material-symbols-outlined eye">
+                      visibility
+                    </span>
+                  </div>
                 </div>
               </div>
               <div class="about">
@@ -177,20 +208,24 @@
               </div>
             </div>
             <!-- product card 2 -->
-            <div class="grid_col">
+            <div class="grid_col y">
               <div class="product_card">
                 <div class="sale"><h6>Sale</h6></div>
                 <img src="img/brain.jpg" alt="brain" />
                 <div class="icons">
-                  <div class="icon"><span class="material-symbols-outlined">
-                    favorite
-                    </span></div>
-                  <div class="icon"><span class="material-symbols-outlined">
-                    shopping_cart
-                    </span></div>
-                    <div class="icon"><span class="material-symbols-outlined eye">
+                  <div class="icon">
+                    <span class="material-symbols-outlined"> favorite </span>
+                  </div>
+                  <div class="icon">
+                    <span class="material-symbols-outlined">
+                      shopping_cart
+                    </span>
+                  </div>
+                  <div class="icon">
+                    <span class="material-symbols-outlined eye">
                       visibility
-                      </span></div>
+                    </span>
+                  </div>
                 </div>
               </div>
               <div class="about">
@@ -221,20 +256,24 @@
               </div>
             </div>
             <!-- product card 3 -->
-            <div class="grid_col">
+            <div class="grid_col z">
               <div class="product_card">
                 <div class="sale"><h6>Sale</h6></div>
                 <img src="img/inject.jpg" alt="injection" />
                 <div class="icons">
-                  <div class="icon"><span class="material-symbols-outlined">
-                    favorite
-                    </span></div>
-                  <div class="icon"><span class="material-symbols-outlined">
-                    shopping_cart
-                    </span></div>
-                    <div class="icon"><span class="material-symbols-outlined eye">
+                  <div class="icon">
+                    <span class="material-symbols-outlined"> favorite </span>
+                  </div>
+                  <div class="icon">
+                    <span class="material-symbols-outlined">
+                      shopping_cart
+                    </span>
+                  </div>
+                  <div class="icon">
+                    <span class="material-symbols-outlined eye">
                       visibility
-                      </span></div>
+                    </span>
+                  </div>
                 </div>
               </div>
               <div class="about">
@@ -287,12 +326,8 @@
           <div class="grid">
             <!-- card 1 -->
             <div class="card">
-              
               <div class="like">
-                <span class="material-symbols-outlined">
-                  favorite
-                  </span>
-                
+                <span class="material-symbols-outlined"> favorite </span>
               </div>
               <div><h3>FREE</h3></div>
               <div><h6>Organize across all apps by hand</h6></div>
@@ -306,30 +341,36 @@
               <div><button>Try for free</button></div>
               <div class="features">
                 <ul>
-                    
                   <li>
-                    <div class="green"><i class="fa-solid fa-circle-check"></i>
-                    Unlimited product updates</div>
+                    <div class="green">
+                      <i class="fa-solid fa-circle-check"></i> Unlimited product
+                      updates
+                    </div>
                   </li>
                   <li>
-                    <div class="green"><i class="fa-solid fa-circle-check"></i>
-                    Unlimited product updates</div>
+                    <div class="green">
+                      <i class="fa-solid fa-circle-check"></i> Unlimited product
+                      updates
+                    </div>
                   </li>
                   <li>
-                    <div class="green"><i class="fa-solid fa-circle-check"></i>
-                    Unlimited product updates</div>
+                    <div class="green">
+                      <i class="fa-solid fa-circle-check"></i> Unlimited product
+                      updates
+                    </div>
                   </li>
-                    
-                  
+
                   <li>
-                    <div class="grey"><i class="fa-solid fa-circle-check"></i>
-                    1GB Cloud storage</div>
+                    <div class="grey">
+                      <i class="fa-solid fa-circle-check"></i> 1GB Cloud storage
+                    </div>
                   </li>
                   <li>
-                    <div class="grey"><i class="fa-solid fa-circle-check"></i>
-                    Email and community support</div>
+                    <div class="grey">
+                      <i class="fa-solid fa-circle-check"></i> Email and
+                      community support
+                    </div>
                   </li>
-                  
                 </ul>
               </div>
             </div>
@@ -337,10 +378,7 @@
             <div class="card">
               <div class="round">New</div>
               <div class="like">
-                <span class="material-symbols-outlined">
-                  favorite
-                  </span>
-                
+                <span class="material-symbols-outlined"> favorite </span>
               </div>
               <h3>FREE</h3>
               <h6>Organize across all apps by hand</h6>
@@ -352,41 +390,43 @@
               <button>Try for free</button>
               <div class="features">
                 <ul>
-                    
                   <li>
-                    <div class="green"><i class="fa-solid fa-circle-check"></i>
-                    Unlimited product updates</div>
+                    <div class="green">
+                      <i class="fa-solid fa-circle-check"></i> Unlimited product
+                      updates
+                    </div>
                   </li>
                   <li>
-                    <div class="green"><i class="fa-solid fa-circle-check"></i>
-                    Unlimited product updates</div>
+                    <div class="green">
+                      <i class="fa-solid fa-circle-check"></i> Unlimited product
+                      updates
+                    </div>
                   </li>
                   <li>
-                    <div class="green"><i class="fa-solid fa-circle-check"></i>
-                    Unlimited product updates</div>
+                    <div class="green">
+                      <i class="fa-solid fa-circle-check"></i> Unlimited product
+                      updates
+                    </div>
                   </li>
-                    
-                    
+
                   <li>
-                    <div class="grey"><i class="fa-solid fa-circle-check"></i>
-                    1GB Cloud storage</div>
+                    <div class="grey">
+                      <i class="fa-solid fa-circle-check"></i> 1GB Cloud storage
+                    </div>
                   </li>
                   <li>
-                    <div class="grey"><i class="fa-solid fa-circle-check"></i>
-                    Email and community support</div>
+                    <div class="grey">
+                      <i class="fa-solid fa-circle-check"></i> Email and
+                      community support
+                    </div>
                   </li>
-                  
                 </ul>
               </div>
             </div>
             <!-- card 3 -->
             <div class="card">
-              
               <div class="like">
-                <span class="material-symbols-outlined">
-                  favorite
-                  </span>
-                
+                <span class="material-symbols-outlined"> favorite </span>
               </div>
               <h3>FREE</h3>
               <h6>Organize across all apps by hand</h6>
@@ -398,31 +438,36 @@
               <button>Try for free</button>
               <div class="features">
                 <ul>
-                    
                   <li>
-                    <div class="green"><i class="fa-solid fa-circle-check"></i>
-                    Unlimited product updates
+                    <div class="green">
+                      <i class="fa-solid fa-circle-check"></i>
+                      Unlimited product updates
                     </div>
                   </li>
                   <li>
-                    <div class="green"><i class="fa-solid fa-circle-check"></i>
-                    Unlimited product updates</div>
+                    <div class="green">
+                      <i class="fa-solid fa-circle-check"></i> Unlimited product
+                      updates
+                    </div>
                   </li>
                   <li>
-                    <div class="green"><i class="fa-solid fa-circle-check"></i>
-                    Unlimited product updates</div>
+                    <div class="green">
+                      <i class="fa-solid fa-circle-check"></i> Unlimited product
+                      updates
+                    </div>
                   </li>
-                    
-                    
+
                   <li>
-                    <div class="grey"><i class="fa-solid fa-circle-check"></i>
-                    1GB Cloud storage</div>
+                    <div class="grey">
+                      <i class="fa-solid fa-circle-check"></i> 1GB Cloud storage
+                    </div>
                   </li>
                   <li>
-                    <div class="grey"><i class="fa-solid fa-circle-check"></i>
-                    Email and community support</div>
+                    <div class="grey">
+                      <i class="fa-solid fa-circle-check"></i> Email and
+                      community support
+                    </div>
                   </li>
-                    
                 </ul>
               </div>
             </div>
@@ -502,9 +547,8 @@
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-regular fa-star"></i>
-
               </div>
-              
+
               <p>
                 Slate helps you see how many more days you need to work to reach
                 your financial goal for the month and year.

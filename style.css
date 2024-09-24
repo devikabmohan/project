@@ -6,6 +6,13 @@
     box-sizing: border-box;
     font-weight: 700;
 }
+:root{
+    --bg: #26335D;
+    --primaryFont_color: #737373;
+    --primary_bg: #ffff;
+    --btn_clr: #1BA0AB;
+
+}
 /* commom styling */
 p{
     font-size: 14px;
@@ -28,14 +35,16 @@ section{
 }
 
 /* Page 1 */
-.headContent{
-    width: 100%;
-    background: #26335D;
-}
+
 header{
-    margin: auto;
+    /* margin: auto; */
+    width: 100%;
   display: flex;
   justify-content: center;
+  position: relative;
+  position: fixed;
+  z-index: 2;
+  background: var(--bg);
 }
 ul li{
     text-decoration: none;
@@ -51,17 +60,56 @@ ul li{
     font-size: 24px;
     color: #ffff;
     padding: 10px;
+    flex: 1;
 }
 .menubar{
    display: flex;
    align-items: center;
-   padding: 21px;
+   padding: 10px 0px;
    gap: 150px;
 }
+.menubar .drop{
+    position: relative;
+    cursor: pointer;
+}
+#dropdown_click{
+    display: none;
+}
+.drop label{
+    display: inline-flex;
+    gap: 5px;
+    align-items: center;
+}
+
+
 .menubar ul{
     display: flex;
     gap: 21px;
     font-weight: 700;
+    /* position: relative; */
+}
+.ham-open, .ham-close{
+    display: none;
+}
+.ham-open{
+    top: 50%;
+    left: 25px;
+    cursor: pointer;
+}
+.ham-close{
+    top: 50%;
+    left: 25px;
+    cursor: pointer;
+}
+.ham-open i, .ham-close i{
+    font-size: 16px;
+    color: #ffffff;
+}
+#check{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 25px;
 }
 .buttons{
     display: flex;
@@ -91,17 +139,23 @@ ul li{
 }
 nav ul li a{
     text-decoration: none;
-    color: #ffff;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+
+.ham{
+    display: none;
 }
 /* head intro content */
 .content{
-    align-items: center;
     background: #26335D;
+    padding-top: 135px;
 }
 .content .container{
     max-width: 1200px;
     margin: auto;
-    padding: 0px 0px 35px;
+    padding: 0px 20px 35px;
 }
 .first_section{
     color: #ffff;
@@ -109,8 +163,6 @@ nav ul li a{
     grid-template-columns: 1fr 1fr;
     align-items: center;
     margin: auto;
-    background: #26335D;
-    /* padding: 40px 0px; */
 }
 .intro{
     display: flex;
@@ -141,7 +193,7 @@ section.layout1{
 .container{
     max-width: 1050px;
     margin: auto;
-    padding: 160px 0px;
+    padding: 160px 20px;
 }
 .secnd_section{
     display: flex;
@@ -186,6 +238,9 @@ a.material-symbols-outlined {
 .layout2{
     background: #ffff;
 }
+.layout2 .container{
+    padding: 50px 20px;
+}
 .layout2 ul{
 display: flex;
 gap: 30px;
@@ -194,6 +249,7 @@ justify-content: space-between;
 padding: 20px 0px;
 }
 
+
 /* section 3 */
 .layout3{
    
@@ -201,7 +257,7 @@ padding: 20px 0px;
 }
 .layout3 .container{
    
-    padding: 72px 0px 10px 0px;
+    padding: 72px 20px 10px;
 }
 
 
@@ -214,7 +270,7 @@ padding: 20px 0px;
     font-size: 40px;
 }
 .main p{
-    color: #737373;
+    color: var(--primaryFont_color);
     font-size: 14px;
 }
 .sectioned{
@@ -226,12 +282,11 @@ padding: 20px 0px;
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 15px;
   }
   
 .product_card{
-    
     position: relative;
 }
 .product_card img{
@@ -257,8 +312,9 @@ padding: 20px 0px;
 .icons{
     position: absolute;
     bottom: 20px;
-    left: 25%;
+    width: 100%;
     display: flex;
+    justify-content: center;
     gap: 10px;
 }
 
@@ -500,9 +556,9 @@ line-height: 24px;
 .layout5{
     background: #26335D;
 }
-.layout5 .container{
+/* .layout5 .container{
     padding: 160px 0px;
-}
+} */
 .new{
     display: flex;
     flex-direction: column;
@@ -584,7 +640,7 @@ gap: 10px;
     background: #FFFFFF;
 }
 .layout6 .container{
-    padding: 150px 0px;
+    padding: 150px 20px;
 }
 .layout6 .sectioned{
     display: flex;
@@ -621,7 +677,7 @@ form{
      background: #F9F9F9;
 }
 form input{
-    min-width: 570px;
+    width: 50vw;
     border: 1px solid #E6E6E6;
     border-radius: 5px 0px 0px 5px;
     background-color: #F9F9F9;
@@ -645,7 +701,7 @@ form button{
     background: #F8F8F8;
 }
 .layout7 .container{
-    padding: 50px 0px 50px 0px;
+    padding: 50px 20px;
 }
 .contact{
     display: flex;
@@ -688,10 +744,10 @@ footer .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 0px 25px 0px;
+    padding: 25px 20px;
     color: #737373;
     font-size: 14px;
-    font-weight: 700;
+    /* font-weight: 700; */
 }
 .socials{
     display: flex;
