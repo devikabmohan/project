@@ -60,6 +60,9 @@
      .cards .card{
         width: 60vw;
      }
+     .comments{
+        padding: 20px;
+     }
 
     
   }
@@ -75,7 +78,7 @@
         padding: 10px 0px 0px 0px;
      }
      .content{
-        padding-top: 90px;
+        padding-top: 130px;
      }
      
       .button{
@@ -136,12 +139,12 @@
         align-items: center;
      }
      .layout4 .card{
-        max-width: 50vw;
+        max-width: 70vw;
      }
 
   }
   @media screen and (min-width:721px) {
-    .menubar .up{
+    .menubar .fa-caret-up{
         color: #ffff;
         display: none;
     }
@@ -162,10 +165,10 @@
         color: black;
     }
     
-    .drop:hover .down{
+    .drop:hover .fa-caret-down{
         display: none;
     }
-    .drop:hover .up{
+    .drop:hover .fa-caret-up{
         display: flex;
     }
     .drop:hover .dropdown{
@@ -191,7 +194,7 @@
     .navbar{
         display: flex;
         flex-direction: row;
-        padding: 20px 20px ;
+        padding: 10px 20px ;
         width: 100%;
     }
     .menu_nav{
@@ -204,11 +207,12 @@
         z-index: 1;
         align-items: center;
         padding: 10px;
-        margin-top: 89px;
-        width: 85vw;
-        height: 100vw;
+        margin-top: 77px;
+        width: 55vw;
+        height: 100vh;
         overflow: auto;
         opacity: 0.95;
+        transition: all 0.8s ease-in-out;
     }
     .menubar ul li a{
         color: #ffffff;
@@ -240,17 +244,12 @@
         opacity: 0;
         position: absolute;
     }
-    .drop .up{
+    .drop .fa-caret-up{
         color: #ffffff;
         display: none;
     }
-    #dropdown_click:checked~.down{
-        display: none;
-    }
-    #dropdown_click:checked~.up{
-        display: flex;
-        align-items: center;
-    }
+   
+    
     #dropdown_click:checked~.dropdown{
         position: relative;
         display: flex;
@@ -259,13 +258,11 @@
         opacity: 1;
         flex-direction: column;
         align-items: center;
-        /* transition: all 0.3s ease-in-out; */
-
+        transition: all 0.7s ease-in-out;
     }
     
     #check:checked ~ .menubar ul{
         left: 0px;
-        /* transition: all 0.5s ease-in-out; */
         overflow: auto;
     }
     #check:checked ~ .menubar .ham{
@@ -288,6 +285,9 @@
     }
     .navbar{
         display: flex;
+    }
+    .content{
+        padding-top: 90px;
     }
     .about p{
         text-overflow: ellipsis;
@@ -339,6 +339,9 @@
     .prices{
         padding-left: 0;
     }
+    .cards .card{
+        width: 65vw;
+    }
     .layout6 .container{
         padding: 60px 20px;
     }
@@ -349,6 +352,7 @@
         font-size: 12px;
     }
   }
+ 
   @media screen and (max-width:500px) {
     a{
         gap: 5px;
@@ -359,15 +363,16 @@
     button{
         font-size: 12px;
     }
-    .first_section h1{
-        font-size: 30px;
-    }
+    
     
     .filled{
         padding: 7px 10px;
         font-size: 12px;
         gap: 3px;
         font-weight: 550;
+    }
+    .menu_nav{
+        width: 85vw;
     }
     .layout1 .material-symbols-outlined{
         font-size: 20px;
@@ -405,8 +410,10 @@
         font-size: 15px;
     }
     .round{
-        width: 50px;
-        height: 50px;
+        width: 80px;
+        height: 80px;
+        top: -11px;
+        right: -10px;
     }
     .contact{
         grid-template-columns: 1fr;
@@ -428,7 +435,7 @@
         box-shadow: none;
     }
     .layout4 .card{
-        max-width: 70vw;
+        max-width: 90vw;
     }
     .grid_col{
         padding: 0vw 8vw;
@@ -453,21 +460,27 @@
         display: none;
     }
   }
-  @media screen and (max-width:400px){
-    .filled{
-     padding: 6px 5px;
-     gap: 0;
-    }
-    
-  }
-  @media screen and (min-width:320px) {
+  
+  @media screen and (max-width:400px) {
     .container{
         padding: 60px 20px;
     }
     .navbar{
         padding: 20px 10px;
     }
-    
+    .filled{
+        padding: 6px 5px;
+        gap: 0;
+       }
+       .menu_nav{
+        width: 100vw;
+       }
+       .first_section h1{
+        font-size: 39px;
+       }
+       .description a{
+        line-height: 35px;
+       }
     .cards .card{
         padding: 20px;
         gap: 5px;
@@ -492,9 +505,13 @@
     .new{
         gap: 40px;
     }
-    .grid .card{
-        padding: 40px 5px;
+    .round{
+        width: 50px;
+        height: 50px;
     }
+    /* .grid .card{
+        padding: 40px 5px;
+    } */
 
 
     

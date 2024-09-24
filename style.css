@@ -193,7 +193,7 @@ section.layout1{
 .container{
     max-width: 1050px;
     margin: auto;
-    padding: 160px 20px;
+    padding: 100px 20px;
 }
 .secnd_section{
     display: flex;
@@ -556,9 +556,7 @@ line-height: 24px;
 .layout5{
     background: #26335D;
 }
-/* .layout5 .container{
-    padding: 160px 0px;
-} */
+
 .new{
     display: flex;
     flex-direction: column;
@@ -591,7 +589,7 @@ line-height: 24px;
 }
 .cards .card{
     background: #FFFFFF;
-    /* width: 348px; */
+   
     padding: 25px;
     gap: 0;
 }
@@ -606,10 +604,7 @@ gap: 15px;
 font-size: 14px;
 color: #737373;
 }
-/* .comments img{
-    width: 137px;
-    align-items: center;
-} */
+
  .stars{
     display: flex;
     gap: 2px;
