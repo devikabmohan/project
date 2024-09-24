@@ -69,8 +69,15 @@
   @media screen and (max-width:890px) {
     
      .main{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
         align-items: center;
         text-align: center;   
+        
+     }
+     .main p{
+        max-width: 70vw;
      }
      .navbar{
         display: flex;
@@ -162,7 +169,7 @@
         margin: -20px;
     }
     .dropdown li a{
-        color: black;
+        color: rgb(105, 103, 103);
     }
     
     .drop:hover .fa-caret-down{
@@ -176,21 +183,22 @@
         position: absolute;
         visibility: visible;
         transition: all .3s ease-in-out;
-        opacity: 1;
+        opacity: 0.9;
         margin: 0;
         left: 0;
         top: 20px;
     }
     .dropdown li a:hover{
         color: black;
-        background: #bdbdbd;
-        padding: 10px;
-        border-radius: 5px;
+        
     }
     
   }
  
   @media screen and (max-width:720px) {
+    header{
+        padding: 0px 10px;
+    }
     .navbar{
         display: flex;
         flex-direction: row;
