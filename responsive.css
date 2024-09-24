@@ -373,6 +373,7 @@
     }
     .menu_nav{
         width: 85vw;
+        margin-top: 71px;
     }
     .layout1 .material-symbols-outlined{
         font-size: 20px;
@@ -474,6 +475,7 @@
        }
        .menu_nav{
         width: 100vw;
+        margin-top: 89px;
        }
        .first_section h1{
         font-size: 39px;
