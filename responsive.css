@@ -379,7 +379,7 @@
         font-weight: 550;
     }
     .menu_nav{
-        width: 85vw;
+        width: 100vw;
         margin-top: 71px;
     }
     .layout1 .material-symbols-outlined{
@@ -481,7 +481,7 @@
         gap: 0;
        }
        .menu_nav{
-        width: 100vw;
+        /* width: 100vw; */
         margin-top: 89px;
        }
        .first_section h1{
