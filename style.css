@@ -411,6 +411,9 @@ justify-content: center;
     border: none;
     background: #1BA0AB;
 }
+.about button:hover .about button a{
+    color: #FFFFFF;
+}
 /* section 4 */
 .layout4{
     
