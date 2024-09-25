@@ -403,17 +403,13 @@ align-items: center;
 background: transparent;
 justify-content: center;
 }
-.about button a{
-    gap: 0;
-}
+
 .about button:hover{
     color: #FFFFFF;
     border: none;
     background: #1BA0AB;
 }
-.about button:hover .about button a{
-    color: #FFFFFF;
-}
+
 /* section 4 */
 .layout4{
     
